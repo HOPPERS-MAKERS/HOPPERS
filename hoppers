@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropa Moderna - Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ropa Moderna</h1>
+        <nav>
+            <a href="#products">Productos</a>
+            <a href="#contact">Contacto</a>
+            <a href="checkout.html">Carrito</a>
+        </nav>
+    </header>
+    <section class="container" id="products">
+        <h2>Productos Destacados</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://via.placeholder.com/200" alt="Sudadera">
+                <h3>Sudadera</h3>
+                <p>$29.99</p>
+                <button onclick="addToCart('Sudadera', 29.99)">Agregar al Carrito</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200" alt="Camiseta">
+                <h3>Camiseta</h3>
+                <p>$19.99</p>
+                <button onclick="addToCart('Camiseta', 19.99)">Agregar al Carrito</button>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contacto</h2>
+        <form action="mailto:example@example.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo Electrónico" required>
+            <textarea name="message" rows="5" placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Ropa Moderna. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
